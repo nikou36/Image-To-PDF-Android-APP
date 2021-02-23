@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/pdfImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="10dp"
+            android:layout_width="70dp"
+            android:src="@drawable/pdf"
+            android:layout_height="70dp"/>
+        <TextView
+            android:id="@+id/pdfPath"
+            app:layout_constraintLeft_toRightOf="@id/pdfImage"
+            app:layout_constraintTop_toTopOf="@id/pdfImage"
+            app:layout_constraintBottom_toBottomOf="@id/pdfImage"
+            android:layout_margin="10dp"
+            android:text="SAMPLE PATH"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/fileSizeText"
+            app:layout_constraintTop_toBottomOf="@id/pdfPath"
+            app:layout_constraintLeft_toRightOf="@id/pdfImage"
+            android:layout_marginLeft="10dp"
+            android:text="1.1MB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/creationText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdfPath"
+            android:layout_marginRight="10dp"
+            android:text="2012-16-08943"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
